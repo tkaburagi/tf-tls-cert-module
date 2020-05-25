@@ -1,6 +1,6 @@
 module "certs" {
   source  = "10thmagnitude/certs/private"
-  version = "0.1.0"
+  version = "0.1"
   # insert the 10 required variables here
   ca_common_name = var.ca_common_name
   ca_public_key_file_path = var.ca_public_key_file_path

@@ -18,6 +18,10 @@ variable "ip_addresses" {
   default = ["10.10.0.50","10.10.0.51","10.10.0.52"]
 }
 
+//variable "ip_addresses" {
+//  default = ["127.0.0.1"]
+//}
+
 variable "organization_name" {
   default = "HashiCorp Inc"
 }
