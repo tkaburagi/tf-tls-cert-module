@@ -1,23 +1,21 @@
 variable "ca_common_name" {
-  default = "kabuctl.vault cert"
+  default = "vault.kabu.hashidemos.io cert"
 }
 
 variable "ca_public_key_file_path" {
-  default = "/Users/kabu/hashicorp/vaultca.crt.pem"
+  default = "/Users/kabu/hashicorp/certs/vaultca-hashidemos.crt.pem"
 }
 
 variable "common_name" {
-  default = "kabuctl.vault cert"
+  default = "vault.kabu.hashidemos.io cert"
 }
 
 variable "dns_names" {
-  type = "list"
-  default = ["kabuctl.vault"]
+  default = ["vault.kabu.hashidemos.io"]
 }
 
 variable "ip_addresses" {
-  type = "list"
-  default = ["127.0.0.1"]
+  default = ["10.10.0.50","10.10.0.51","10.10.0.52"]
 }
 
 variable "organization_name" {
@@ -25,11 +23,11 @@ variable "organization_name" {
 }
 
 variable "private_key_file_path" {
-  default = "/Users/kabu/hashicorp/vaultvault.key.pem"
+  default = "/Users/kabu/hashicorp/certsvaultvault-hashidemos.key.pem"
 }
 
 variable "public_key_file_path" {
-  default = "/Users/kabu/hashicorp/vaultvault.crt.pem"
+  default = "/Users/kabu/hashicorp/certs/vaultvault-hashidemos.crt.pem"
 }
 
 variable "validity_period_hours" {
